@@ -1,0 +1,42 @@
+Video Side-by-side Combiner (combines two videos side by side)
+	•Import Videos
+	•Export Video that has them side by side
+		#Trimmer (really nice if we could have it to where) 
+			- User can designate where to trim off the ends of either video before combining
+		
+
+Video Segmenter (Cutting an imported video into several particular segments that are labelled A-Z with start and end times designated by user either clicking or typing in values.)
+	•Import/Export Destination 
+		- Imports a video of user choice
+		- User declares what folder the project will be exporting its segments to
+
+	•Timeline
+		- Displays a timeline of a loaded video with a preview frame above it displaying the frame at the current timestamp
+			- Current timestamp will be indicated to the user by a cursor for the position on the timeline
+				- There is a input textbox that the user can type in values into to change the "current timestamp" video frame
+					-This input textbox will be below the timeline and centered
+			- Clicking on the timeline also changes the preview frame
+			
+			#Play/Pause functionality (really nice if we could have it to where) 
+				- The user can click a button that will play the video at the particular location
+					-Moves the current timestamp with the video location (locks the input box)
+					-Pause button over the play button that stops the playing
+		
+	•Segments
+		- Clickable Buttons/Boxes labeled A-Z saying start, and another to the right saying A-Z end
+			- Clicking on a box hides the box and reveals an input textbox to enter timestamp
+				- Timestamps used to create a start - finish and must be validated before continuing
+			- Clicking on the timeline while the input box is visible will update the input box with the value of the current video frame timestamp
+				- Validation on where the user clicks
+
+	•Submit
+		- A button at the bottom to submit the form
+			-Stores files in a folder from export destination (or at leastin a specific default place with a unique name from timestamp)
+			-Takes the start and end times for all the segments and creates videos from it using ffmpeg
+				-Segments are labelled A-Z in the folder
+
+#Resolution Adjustments
+	#Adjusts entire form and timeline to maximized size
+
+##A side-by-side segment combiner for multiple segments
+	#Essentially the program allows a user to filter excess from predetermined segments of two videos and combine them using the entire utility
